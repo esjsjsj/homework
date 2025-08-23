@@ -55,7 +55,7 @@ d
 ### 4. 링크 & 이미지
 
 링크 [수진의 GitHub 저장소](https://github.com/esjsjsj)  
-이미지 [멋쟁이 사자](./src/img/lionking.png)
+이미지 [멋쟁이 사자](../img/lionking.png)
 
 ### 5.코드
 
