@@ -1,1 +1,48 @@
 /* 여기에 스타일을 구현해 주세요 */
+body {
+  margin-top: 300px;
+}
+
+.avatars {
+  width: 360px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+  position: relative;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: block;
+}
+
+span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.online {
+  background-color: #4cfe88;
+}
+
+.offline {
+  background-color: #dbdbdb;
+}
