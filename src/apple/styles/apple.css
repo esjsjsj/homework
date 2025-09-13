@@ -1,3 +1,107 @@
-@import "./card-component.css";
+@import './card-component.css';
 
-/* 카드 레이아웃 */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto, minmax(1024px, 1fr));
+  min-width: 500px;
+  gap: 16px;
+}
+
+/* 카드 공통 */
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  inline-size: 100%;
+  block-size: 50vh;
+
+  .card-content {
+    position: absolute;
+    top: 30%; /* 카드 높이의 1/3 지점 */
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: var(--extra-large-text);
+    font-weight: 700;
+    margin: var(--small-spacing);
+  }
+
+  p {
+    font-size: var(--medium-text);
+    font-weight: 400;
+    margin: var(--small-spacing);
+    line-height: var(--line-normal);
+  }
+
+  .release-date {
+    font-size: var(--small-text);
+    color: var(--gray);
+    margin: 16px;
+  }
+}
+.btn {
+  font-size: var(--xx-small-text);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+/* 블루 버튼 */
+.btn-style1 {
+  background-color: var(--blue-400);
+  color: var(--white);
+}
+
+.btn-style2 {
+  background-color: transparent;
+  border: 1px solid var(--blue-400);
+  color: var(--white);
+}
+
+/* 블랙 버튼 */
+.btn-style3 {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn-style4 {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+/* 배경 */
+.ipad-pro {
+  background-image: url('/src/apple/products/ipad_pro.jpeg');
+  color: var(--white);
+}
+.ipad-air {
+  background-image: url('/src/apple/products/ipad_air.jpeg');
+  color: var(--black);
+}
+.iphone-15pro {
+  background-image: url('/src/apple/products/iphone15_pro.jpeg');
+  color: var(--white);
+}
+.iphone-15 {
+  background-image: url('/src/apple/products/iphone15.jpeg');
+  color: var(--black);
+}
+.watch {
+  background-image: url('/src/apple/products/apple_watch.jpeg');
+  color: var(--white);
+}
+.macbook-air {
+  background-image: url('/src/apple/products/macbook_air.jpeg');
+  color: var(--black);
+}
+.airpods-pro {
+  background-image: url('/src/apple/products/airpods_pro.jpeg');
+  color: var(--white);
+}
